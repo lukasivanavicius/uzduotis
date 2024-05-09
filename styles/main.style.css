@@ -1,0 +1,81 @@
+@import "common.style.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+:root {
+  /* Colors */
+  --cl-primary: #FE5F55;
+  --cl-secondary: #140f2d;
+  --cl-dark: #343a40;
+  --cl-light: #f8f9fa;
+  /* Font sizes */
+  --fs-text-smallest: clamp(1rem, 2vw, 1.2rem);
+  --fs-text-small: clamp(1.2rem, 2vw, 1.6rem);
+  --fs-text-medium: clamp(1.6rem, 3vw, 2.4rem);
+  --fs-text-large: clamp(2.4rem, 5vw, 3rem);
+  --fs-text-largest: clamp(3rem, 6vw, 3.6rem);
+  /* Padding */
+  --pd-small: clamp(0.2rem, 2vw, 0.6rem);
+  --pd-medium: clamp(0.6rem, 3vw, 1.2rem);
+  --pd-large: clamp(1.2rem, 4vw, 1.8rem);
+  /* Gaps */
+  --gap-small: 0.5rem;
+  --gap-medium: 1rem;
+  --gap-large: 1.5rem;
+  /* OTHER */
+  --transition: all 0.3s ease;
+  --border-radius: 6px;
+  --max-width: 100rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--cl-light);
+  color: var(--cl-dark);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  font-size: var(--fs-text-smallest);
+}
+
+/* #00002E #80ffd3 */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+
+}
+
+button,
+a {
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  border-radius: var(--border-radius);
+}
+
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
